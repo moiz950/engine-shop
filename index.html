@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engine Store - Premium Fashion Clothing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- ===== Toast Container ===== -->
+  <div class="toast-container"></div>
+
+  <!-- ===== Top Bar ===== -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span><i class="fa-solid fa-truck"></i> Free Shipping on Orders Over $50</span>
+        <span><i class="fa-solid fa-rotate-left"></i> Easy Returns</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Support</a>
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Store Locator</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-crown"></i> Engine <span>Store</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="shop.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="wishlist-icon">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-count">0</span>
+        </a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero Banner ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Elevate Your Style With <span>Engine Store</span></h1>
+        <p>Discover the latest trends in fashion. Premium quality clothing, footwear, and accessories designed for those who demand the best.</p>
+        <div class="hero-buttons">
+          <a href="shop.html" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="categories.html" class="btn btn-white">Explore Collections</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3>10K+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="hero-stat">
+            <h3>500+</h3>
+            <p>Products</p>
+          </div>
+          <div class="hero-stat">
+            <h3>50+</h3>
+            <p>Brand Partners</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-placeholder" id="heroImage">
+          <span class="hero-img-text">Premium Fashion</span>
+          <span class="floating-tag">New Collection</span>
+          <span class="floating-tag">Up to 50% Off</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Categories ===== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Shop by Category</h2>
+        <p>Explore our wide range of fashion categories tailored to your style.</p>
+      </div>
+      <div class="categories-grid">
+        <a href="categories.html" class="category-card">
+          <i class="fa-solid fa-shoe-prints"></i>
+          <h3>Shoes</h3>
+          <p>24 Products</p>
+        </a>
+        <a href="categories.html" class="category-card">
+          <i class="fa-solid fa-vest"></i>
+          <h3>Jackets</h3>
+          <p>18 Products</p>
+        </a>
+        <a href="categories.html" class="category-card">
+          <i class="fa-solid fa-shirt"></i>
+          <h3>T-Shirts</h3>
+          <p>32 Products</p>
+        </a>
+        <a href="categories.html" class="category-card">
+          <i class="fa-solid fa-hoodie"></i>
+          <h3>Hoodies</h3>
+          <p>15 Products</p>
+        </a>
+        <a href="categories.html" class="category-card">
+          <i class="fa-solid fa-user-tie"></i>
+          <h3>Shirts</h3>
+          <p>22 Products</p>
+        </a>
+        <a href="categories.html" class="category-card">
+          <i class="fa-solid fa-hat-wizard"></i>
+          <h3>Accessories</h3>
+          <p>40 Products</p>
+        </a>
+        <a href="categories.html" class="category-card">
+          <i class="fa-solid fa-binoculars"></i>
+          <h3>Jeans</h3>
+          <p>20 Products</p>
+        </a>
+        <a href="categories.html" class="category-card">
+          <i class="fa-regular fa-clock"></i>
+          <h3>New Arrivals</h3>
+          <p>12 Products</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trending Products ===== -->
+  <section class="section-padding" style="background: var(--light);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Trending Now</h2>
+        <p>Most popular products our customers love right now.</p>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <span class="product-badge sale">-33%</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="0">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Jeans</p>
+            <h3><a href="product-details.html">Classic Slim Fit Jeans</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <span>(128)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$59.99</span>
+              <span class="old-price">$89.99</span>
+              <span class="discount-percent">-33%</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <span class="product-badge new">New</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="1">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">T-Shirts</p>
+            <h3><a href="product-details.html">Premium Cotton T-Shirt</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span>(95)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$29.99</span>
+              <span class="old-price">$39.99</span>
+              <span class="discount-percent">-25%</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <span class="product-badge best">Best Seller</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="2">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Hoodies</p>
+            <h3><a href="product-details.html">Warm Winter Hoodie</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span>(203)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$79.99</span>
+              <span class="old-price">$119.99</span>
+              <span class="discount-percent">-33%</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <span class="product-badge sale">-25%</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="3">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Jackets</p>
+            <h3><a href="product-details.html">Leather Bomber Jacket</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <span>(156)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$149.99</span>
+              <span class="old-price">$199.99</span>
+              <span class="discount-percent">-25%</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Offer Banner ===== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="offer-banner">
+        <div class="offer-content">
+          <h2>Flash Sale <span>50% Off</span></h2>
+          <p>Limited time offer on selected items. Don't miss out on these amazing deals!</p>
+          <div class="offer-timer">
+            <div class="timer-item">
+              <span class="number hours">24</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="timer-item">
+              <span class="number minutes">00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="timer-item">
+              <span class="number seconds">00</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+          <a href="sale.html" class="btn btn-primary">Shop Sale <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="offer-image">
+          <i class="fa-solid fa-tags"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== New Arrivals ===== -->
+  <section class="section-padding" style="background: var(--light);">
+    <div class="container">
+      <div class="section-title">
+        <h2>New Arrivals</h2>
+        <p>Check out our newest additions to the collection.</p>
+      </div>
+      <div class="products-grid">
+        <!-- Product 5 -->
+        <div class="product-card">
+          <span class="product-badge new">New</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="4">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Shoes</p>
+            <h3><a href="product-details.html">Running Sneakers Pro</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span>(187)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$99.99</span>
+              <span class="old-price">$139.99</span>
+              <span class="discount-percent">-29%</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <span class="product-badge new">New</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="5">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Accessories</p>
+            <h3><a href="product-details.html">Leather Belt Classic</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span>(64)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$34.99</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <span class="product-badge sale">-29%</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="6">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Shirts</p>
+            <h3><a href="product-details.html">Formal Dress Shirt</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-alt"></i>
+              </div>
+              <span>(112)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$49.99</span>
+              <span class="old-price">$69.99</span>
+              <span class="discount-percent">-29%</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <span class="product-badge sale">-31%</span>
+          <a href="product-details.html" class="product-image dynamic-image" data-index="7">
+            <button class="product-wishlist"><i class="fa-regular fa-heart"></i></button>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Accessories</p>
+            <h3><a href="product-details.html">Designer Sunglasses</a></h3>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span>(48)</span>
+            </div>
+            <div class="product-price">
+              <span class="current-price">$89.99</span>
+              <span class="old-price">$129.99</span>
+              <span class="discount-percent">-31%</span>
+            </div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h4>Free Shipping</h4>
+          <p>Free shipping on all orders over $50</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-rotate-left"></i>
+          <h4>Easy Returns</h4>
+          <p>30-day hassle-free return policy</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Secure Payment</h4>
+          <p>100% secure checkout & payment</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-headset"></i>
+          <h4>24/7 Support</h4>
+          <p>Dedicated customer support team</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Newsletter ===== -->
+  <section class="section-padding newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest updates on new products and upcoming sales directly to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fa-solid fa-crown"></i> Engine <span>Store</span></h3>
+          <p>Engine Store is your premium destination for modern fashion. We curate the best trends in clothing, footwear, and accessories to help you express your unique style.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="return-exchange.html">Return & Exchange</a></li>
+            <li><a href="contact.html">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New York, USA</li>
+            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fa-solid fa-envelope"></i> support@enginestore.com</li>
+            <li><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 9:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Engine Store. All Rights Reserved.</p>
+        <div class="footer-payments">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Scroll to Top ===== -->
+  <button id="scrollTop" class="scroll-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

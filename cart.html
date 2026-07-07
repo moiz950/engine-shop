@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Engine Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div class="toast-container"></div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span><i class="fa-solid fa-truck"></i> Free Shipping on Orders Over $50</span>
+        <span><i class="fa-solid fa-rotate-left"></i> Easy Returns</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Support</a>
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Store Locator</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-crown"></i> Engine <span>Store</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="shop.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="wishlist-icon">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-count">0</span>
+        </a>
+        <a href="cart.html" class="cart-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <p>Review and manage the items in your cart</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Cart</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <div class="container">
+      <div class="cart-layout">
+        <!-- Cart Items -->
+        <div class="cart-items">
+          <h2>Cart Items (3)</h2>
+
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div class="cart-item-info">
+              <h4>Classic Slim Fit Jeans</h4>
+              <p>Size: M | Color: Dark Blue</p>
+              <span class="item-price">$59.99</span>
+              <div class="item-total" style="display: none;">$59.99</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="quantity">
+                <button class="qty-minus">-</button>
+                <input type="number" value="1" min="1" max="99">
+                <button class="qty-plus">+</button>
+              </div>
+              <button class="remove-btn"><i class="fa-solid fa-trash-can"></i> Remove</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div class="cart-item-info">
+              <h4>Premium Cotton T-Shirt</h4>
+              <p>Size: L | Color: Black</p>
+              <span class="item-price">$29.99</span>
+              <div class="item-total" style="display: none;">$29.99</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="quantity">
+                <button class="qty-minus">-</button>
+                <input type="number" value="2" min="1" max="99">
+                <button class="qty-plus">+</button>
+              </div>
+              <button class="remove-btn"><i class="fa-solid fa-trash-can"></i> Remove</button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div class="cart-item-info">
+              <h4>Leather Bomber Jacket</h4>
+              <p>Size: XL | Color: Black</p>
+              <span class="item-price">$149.99</span>
+              <div class="item-total" style="display: none;">$149.99</div>
+            </div>
+            <div class="cart-item-actions">
+              <div class="quantity">
+                <button class="qty-minus">-</button>
+                <input type="number" value="1" min="1" max="99">
+                <button class="qty-plus">+</button>
+              </div>
+              <button class="remove-btn"><i class="fa-solid fa-trash-can"></i> Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span class="subtotal-amount">$269.97</span>
+          </div>
+          <div class="summary-row discount">
+            <span>Discount (10%)</span>
+            <span class="discount-amount">-$26.99</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span class="shipping-amount">Free</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span class="total-amount">$242.98</span>
+          </div>
+          <button class="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="shop.html" class="continue-shopping"><i class="fa-solid fa-arrow-left"></i> Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fa-solid fa-crown"></i> Engine <span>Store</span></h3>
+          <p>Engine Store is your premium destination for modern fashion. We curate the best trends in clothing, footwear, and accessories to help you express your unique style.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="return-exchange.html">Return & Exchange</a></li>
+            <li><a href="contact.html">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New York, USA</li>
+            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fa-solid fa-envelope"></i> support@enginestore.com</li>
+            <li><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 9:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Engine Store. All Rights Reserved.</p>
+        <div class="footer-payments">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
